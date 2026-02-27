@@ -1,4 +1,4 @@
-# 🚀 Assignment 01: Next-Gen Interactive To-Do List
+# 🚀 Assignment 01: Interactive To-Do List
 
 <p align="center">
   <img src="./assets/display-APP-ezgif.com-speed.gif" width="350" alt="App Demonstration GIF" style="border-radius: 20px; border: 4px solid #696FC7; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);" />
