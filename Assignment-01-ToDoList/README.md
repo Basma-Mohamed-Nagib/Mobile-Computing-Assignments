@@ -1,65 +1,66 @@
-# Assignment 01: Interactive To-Do List 📱
+# 🚀 Assignment 01: Next-Gen Interactive To-Do List
 
-## 📝 Project Description
-A modern, responsive To-Do List application built with **React Native** and **Expo**. This app was developed as part of the **Mobile Computing** course assignments for Spring 2026. It focuses on efficient state management, high-performance list rendering, and a clean user experience tailored for mobile devices.
+<p align="center">
+  <img src="./assets/display-APP-ezgif.com-speed.gif" width="350" alt="App Demonstration GIF" style="border-radius: 20px; border: 4px solid #696FC7; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);" />
+  <br>
+  <i>(Animated Demo: Watch the application in action automatically)</i>
+</p>
 
 ---
 
-## 📸 Application Preview (Screenshots)
+<p align="center">
+  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Expo_Snack-000020?style=for-the-badge&logo=expo&logoColor=white" />
+  <img src="https://img.shields.io/badge/Course-Mobile_Computing-blueviolet?style=for-the-badge" />
+</p>
 
-| 1. Initial State | 2. Adding Tasks | 3. Completed/Delete |
+## 📝 Project Overview
+This application is a professional **To-Do List** manager built using **React Native**. Developed within the **Expo Snack** environment, it provides a seamless cross-platform experience with a focus on elegant design and robust state management.
+
+---
+
+## 🎨 Design System & Visual Identity
+The UI is built on a custom aesthetic palette to ensure visual harmony and a modern user experience.
+
+* **Theme**: Deep Lavender & Peach Fusion.
+* **Color Palette**:
+    * **Primary Accent**: `#696FC7` (Used for Header & Buttons).
+    * **Main Background**: `#F2AEBB` (Soft Peach Pink).
+    * **Active Cards**: `#A7AAE1` (Task Backgrounds).
+    * **Completed State**: `#F5D3C4` (Soft Neutral).
+
+---
+
+## 📸 Static Preview (Screenshots)
+
+| 1. Initial State | 2. Adding Tasks | 3. Operations |
 |---|---|---|
 | ![Initial State](./assets/image01.png) | ![Adding Tasks](./assets/image02.png) | ![Completed State](./assets/image03.png) |
 
-> **Note:** Please ensure your screenshot files are named exactly as above in the `assets` folder, or update the names in this table.
+---
+
+## 🛠️ Technical Engineering Features
+This project implements high-level architectural patterns in React Native:
+
+1. **State Persistence**: Using `useState` hooks for real-time data binding between input and the task list.
+2. **Data Integrity**: Implementing **Immutability** patterns using `.map()` and `.filter()` to manage task lifecycle (Add/Toggle/Delete) safely.
+3. **High Performance**: Optimized rendering using the `FlatList` component for efficient memory management during scrolling.
+4. **Interactive UI**: Custom feedback loops using `TouchableOpacity` and dynamic conditional styling.
 
 ---
 
-## 🎥 Live Demo (Video)
-You can view the full demonstration of the app's functionality here:
-[▶ Click here to watch the Display Video](./assets/display-APP.mp4)
-
----
-
-## 🎨 Design Philosophy & Color Palette
-The UI was designed using a premium color palette to ensure an elegant and modern look, specifically selected for visual clarity.
-
-* **Theme Concept**: Deep Lavender & Peach.
-* **Technical Color Specs**:
-    * **Header & Primary Buttons**: `#696FC7`
-    * **App Background**: `#F2AEBB`
-    * **Task Cards (Default)**: `#A7AAE1`
-    * **Completed Task State**: `#F5D3C4`
-
----
-
-## 🛠️ Technical Features
-This project implements core React Native architectural patterns:
-
-### 1. Advanced State Management
-* **`useState` Hook**: Utilized for real-time tracking of text input and the main tasks array.
-* **Dynamic UI Rendering**: The interface updates instantly when tasks are added, marked as done, or removed.
-
-### 2. Functional Logic
-* **Validation**: The `addGoalHandler` ensures no empty strings are added to the list.
-* **Immutability**: Uses the `.map()` function to toggle task status, ensuring state is updated according to React best practices.
-* **Data Removal**: Implements `.filter()` to remove items efficiently via their unique `id`.
-
-### 3. Performance & UI Components
-* **`FlatList`**: Used instead of a standard ScrollView to ensure memory efficiency and high performance during list scrolling.
-* **`TouchableOpacity`**: Provides native touch feedback for all interactive buttons and task items.
-* **Conditional Styling**: Styles change dynamically based on the task’s completion status (e.g., strike-through text and background opacity).
-
----
-
-## 💻 Core Logic Implementation
+## 💻 Core Logic Overview
+The following snippet represents the core engine of the application, managing task toggling and data removal:
 
 ```javascript
-// Function to toggle task completion status using immutability
-function toggleCompleteHandler(goalId) {
-  setCourseGoals((currentCourseGoals) =>
-    currentCourseGoals.map((goal) =>
-      goal.id === goalId ? { ...goal, completed: !goal.completed } : goal
-    )
+// Toggle Completion Status
+const toggleCompleteHandler = (id) => {
+  setCourseGoals(prevGoals => 
+    prevGoals.map(goal => goal.id === goalId ? { ...goal, completed: !goal.completed } : goal)
   );
-}
+};
+
+// Remove Task from List
+const deleteGoalHandler = (id) => {
+  setCourseGoals(prevGoals => prevGoals.filter(goal => goal.id !== id));
+};
