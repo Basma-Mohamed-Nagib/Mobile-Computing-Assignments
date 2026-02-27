@@ -15,7 +15,7 @@
 </p>
 
 ## 📝 Project Overview
-This application is a professional **To-Do List** manager built using **React Native**. Developed within the **Expo Snack** environment, it provides a seamless cross-platform experience with a focus on elegant design and robust state management.
+This application is a **To-Do List** manager built using **React Native**. Developed within the **Expo Snack** environment, it provides a seamless cross-platform experience with a focus on elegant design and robust state management.
 
 ---
 
