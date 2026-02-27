@@ -9,7 +9,7 @@ A modern, responsive To-Do List application built with **React Native** and **Ex
 
 | 1. Initial State | 2. Adding Tasks | 3. Completed/Delete |
 |---|---|---|
-| ![Initial State](./assets/image01.png) | ![Adding Tasks](./assets/image02.png) | ![Completed State](./image03.png) |
+| ![Initial State](./assets/image01.png) | ![Adding Tasks](./assets/image02.png) | ![Completed State](./assets/image03.png) |
 
 > **Note:** Please ensure your screenshot files are named exactly as above in the `assets` folder, or update the names in this table.
 
