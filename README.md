@@ -13,9 +13,9 @@ Welcome to my workspace for the **Mobile Computing** course. This repository ser
 
 | Lab / Assignment | Project Name | Preview | Key Technologies & Features | Live Expo Snack | Status |
 | :--- | :--- | :---: | :--- | :---: | :---: |
-| **Assignment 01** | **To-Do List App** | <img src="./Assignment01/assets/display-APP-ezgif.com-speed.gif" width="300" style="border-radius: 10px; border: 2px solid #696FC7;"> | React Native, `useState`, `FlatList`, Google Fonts, Custom Theme | [🔗 View on Snack](https://snack.expo.dev/@basma_mohamed/blessed-red-cashew) | ✅ Complete |
-| **Assignment 02** | **Upcoming** | <img src="https://via.placeholder.com/300x150?text=Next+Assignment" width="300" style="border-radius: 10px;"> | To be determined | - | ⏳ Pending |
-| **Assignment 03** | **Upcoming** | <img src="https://via.placeholder.com/300x150?text=Next+Assignment" width="300" style="border-radius: 10px;"> | To be determined | - | ⏳ Pending |
+| **Assignment 01** | **To-Do List App** | <img src="./Assignment-01-ToDoList/assets/display-APP-ezgif.com-speed.gif" width="300" style="border-radius: 10px; border: 2px solid #696FC7;"> | React Native, `useState`, `FlatList`, Google Fonts, Custom Theme | [🔗 View on Snack](https://snack.expo.dev/@basma_mohamed/blessed-red-cashew) | ✅ Complete |
+| **Assignment 02** | **Upcoming** | ⏳ | To be determined | - | ⏳ Pending |
+| **Assignment 03** | **Upcoming** | ⏳ | To be determined | - | ⏳ Pending |
 
 ---
 
@@ -24,4 +24,5 @@ Welcome to my workspace for the **Mobile Computing** course. This repository ser
 * **Design Strategy:** High-Resolution UI with [Color Hunt Palette #696FC7](https://colorhunt.co/palette/696fc7a7aae1f5d3c4f2aebb)
 
 ---
+
 
